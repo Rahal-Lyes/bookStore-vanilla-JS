@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="./output.css">
+    <title>Book Store vanilla js </title>
+</head>
+
+<body>
+
+
+    <div class="flex justify-center ">
+        <h1 class="text-3xl mt-5"><i class="fa-solid fa-book text-blue-200"></i>
+            My
+            <span class="text-blue-200">Book</span>Store
+        </h1>
+    </div>
+    <div class="border-b border-gray-500 w-3/4 mx-auto mt-4"></div>
+    <!-- form input -->
+    <div class="w-4/6 h-20 h-screen mx-auto">
+        <form class="p-10" id="book-form">
+            <label for="title" class="block text-lg font-medium mb-2">Title</label>
+            <input type="text" placeholder="Name of book" name="title" >
+
+            <label for="author" class="block text-lg font-medium mt-4 mb-4">Author</label>
+            <input type="text" placeholder="Name of author" name="author" >
+
+            <label for="isbn" class="block text-lg font-medium mt-4 mb-4">ISBN#</label>
+            <input type="text" placeholder="ISBN" name="isbn">
+        
+        <div>
+            
+            <button type="submit"><i class="fa-solid fa-plus"></i>   Add Book</button>
+        </div>
+    </form>
+    <div  class="border-b border-gray-500 w-3/4 mx-auto mt-4"></div>
+    <div>
+        <table class="w-full">
+            <thead class="bg-gray-500 border-b-2 border-gray-200">
+                <tr>
+                    <th class="p-3 text-sm font-semibold tracking-wide text-left">Title</th>
+                    <th class="p-3 text-sm font-semibold tracking-wide text-left">author</th>
+                    <th class="p-3 text-sm font-semibold tracking-wide text-left">ISBN</th>
+                    <th class="p-3 text-sm font-semibold tracking-wide text-left"><button></button></th>
+                </tr>
+            </thead>
+            <tbody id="books-list">
+              
+                
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+   <script src="./index.js"></script>
+    </body>
+   
+
+</html>
